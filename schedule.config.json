@@ -1,0 +1,10 @@
+{
+  "enabled": true,
+  "startDate": "2026-04-05",
+  "intervalDays": 1,
+  "publishHour": 3,
+  "timezone": "Asia/Beirut",
+  "ordering": "alphabetical",
+  "autoScheduleNewArticles": true,
+  "articleRoots": []
+}

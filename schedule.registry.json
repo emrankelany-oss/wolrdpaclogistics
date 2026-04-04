@@ -1,0 +1,65 @@
+{
+  "lastUpdated": "2026-04-04T23:08:43.268Z",
+  "articles": [
+    {
+      "slug": "about-us",
+      "route": "/about-us",
+      "filePath": "c:/Users/Pc/Desktop/projects/worldpaclogistics/src/app/about-us/page.js",
+      "status": "scheduled",
+      "publishAt": "2026-04-05T00:00:00.000Z",
+      "detectedAt": "2026-04-04T23:03:40.469Z",
+      "publishedAt": null,
+      "title": "About Us"
+    },
+    {
+      "slug": "contact-us",
+      "route": "/contact-us",
+      "filePath": "c:/Users/Pc/Desktop/projects/worldpaclogistics/src/app/contact-us/page.js",
+      "status": "scheduled",
+      "publishAt": "2026-04-06T00:00:00.000Z",
+      "detectedAt": "2026-04-04T23:03:40.470Z",
+      "publishedAt": null,
+      "title": "Contact Us"
+    },
+    {
+      "slug": "services",
+      "route": "/services",
+      "filePath": "c:/Users/Pc/Desktop/projects/worldpaclogistics/src/app/services/page.js",
+      "status": "scheduled",
+      "publishAt": "2026-04-07T00:00:00.000Z",
+      "detectedAt": "2026-04-04T23:03:40.470Z",
+      "publishedAt": null,
+      "title": "Our Services"
+    },
+    {
+      "slug": "article-ecommerce-tco",
+      "route": "/articles/article-ecommerce-tco",
+      "filePath": "c:/Users/Pc/Desktop/projects/worldpaclogistics/src/app/articles/article-ecommerce-tco/page.tsx",
+      "status": "scheduled",
+      "publishAt": "2026-04-05T00:00:00.000Z",
+      "detectedAt": "2026-04-04T23:08:43.255Z",
+      "publishedAt": null,
+      "title": "{t('heroTitle')}"
+    },
+    {
+      "slug": "article-inventory-framework",
+      "route": "/articles/article-inventory-framework",
+      "filePath": "c:/Users/Pc/Desktop/projects/worldpaclogistics/src/app/articles/article-inventory-framework/page.tsx",
+      "status": "scheduled",
+      "publishAt": "2026-04-06T00:00:00.000Z",
+      "detectedAt": "2026-04-04T23:08:43.255Z",
+      "publishedAt": null,
+      "title": "{t('heroTitle')}"
+    },
+    {
+      "slug": "article-mpos-hidden-math",
+      "route": "/articles/article-mpos-hidden-math",
+      "filePath": "c:/Users/Pc/Desktop/projects/worldpaclogistics/src/app/articles/article-mpos-hidden-math/page.tsx",
+      "status": "scheduled",
+      "publishAt": "2026-04-07T00:00:00.000Z",
+      "detectedAt": "2026-04-04T23:08:43.255Z",
+      "publishedAt": null,
+      "title": "{t('heroTitle')}"
+    }
+  ]
+}
