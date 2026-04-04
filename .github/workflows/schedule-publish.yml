@@ -3,7 +3,7 @@ name: Schedule Engine — Sync & Publish
 on:
   schedule:
     # Runs daily at 22:15 UTC (1:15 AM Asia/Beirut)
-    - cron: '15 22 * * *'
+    - cron: '35 22 * * *'
   workflow_dispatch:
     # Allows manual trigger from GitHub Actions UI
 
