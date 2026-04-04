@@ -28,17 +28,17 @@ export default function FAQSection() {
     const [openIndex, setOpenIndex] = useState(0);
 
     return (
-        <section className="py-24 px-6 md:px-12 lg:px-24 bg-white text-[#252728]">
-            <div className="max-w-[1400px] mx-auto">
+        <section className="py-16 px-4 md:px-6 lg:px-8 bg-white text-[#252728]">
+            <div className="max-w-[1920px] mx-auto">
 
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-start">
                     {/* Left Column - FAQ Content */}
                     <div>
                         <div className="mb-12 text-left">
-                            <h2 className="text-3xl md:text-4xl lg:text-5xl font-medium uppercase tracking-wide drop-shadow-lg leading-[1.1] text-[#252728] mb-4">
+                            <h2 className="text-3xl md:text-4xl lg:text-5xl font-medium tracking-wide drop-shadow-lg leading-[1.1] text-[#252728] mb-4">
                                 Frequently Asked Questions
                             </h2>
-                            <p className="text-gray-600 text-lg">
+                            <p className="text-gray-600 text-lg max-w-2xl">
                                 Find answers to common questions about our logistics services and shipping processes.
                             </p>
                         </div>
@@ -47,13 +47,13 @@ export default function FAQSection() {
                             {faqs.map((faq, index) => (
                                 <div
                                     key={index}
-                                    className={`border border-gray-200 rounded-2xl transition-all duration-300 ${openIndex === index ? 'bg-white shadow-lg' : 'bg-white hover:bg-gray-100'}`}
+                                    className={`border border-gray-200 rounded-[40px] transition-all duration-300 ${openIndex === index ? 'bg-white shadow-lg' : 'bg-white hover:bg-gray-100'}`}
                                 >
                                     <button
                                         onClick={() => setOpenIndex(index === openIndex ? -1 : index)}
                                         className="w-full flex items-center justify-between p-6 text-left focus:outline-none"
                                     >
-                                        <span className={`text-lg font-bold transition-colors font-sans ${openIndex === index ? 'text-red-700' : 'text-[#252728]'}`}>
+                                        <span className={`text-lg font-extrabold transition-colors ${openIndex === index ? 'text-red-700' : 'text-[#252728]'}`}>
                                             {faq.question}
                                         </span>
                                         <span className={`transform transition-transform duration-300 flex-shrink-0 ml-4 ${openIndex === index ? 'rotate-180' : 'rotate-0'}`}>
@@ -66,7 +66,7 @@ export default function FAQSection() {
                                     <div
                                         className={`overflow-hidden transition-all duration-300 ease-in-out ${openIndex === index ? 'max-h-48 opacity-100' : 'max-h-0 opacity-0'}`}
                                     >
-                                        <div className="p-6 pt-0 text-gray-600 leading-relaxed border-t border-gray-100 mt-2 font-sans">
+                                        <div className="p-6 pt-0 text-gray-600 leading-relaxed border-t border-gray-100 mt-2">
                                             {faq.answer}
                                         </div>
                                     </div>
@@ -80,7 +80,7 @@ export default function FAQSection() {
                         <div className="sticky top-24">
                             <div className="relative">
                                 {/* Image 1 - Top Left */}
-                                <div className="relative z-10 w-[85%] rounded-[30px] overflow-hidden shadow-2xl border-4 border-white">
+                                <div className="relative z-10 w-[85%] rounded-[40px] overflow-hidden shadow-2xl border-4 border-white">
                                     <img
                                         src="/images/qa1.png"
                                         alt="Logistics Support Team"
@@ -89,7 +89,7 @@ export default function FAQSection() {
                                 </div>
 
                                 {/* Image 2 - Bottom Right Overlap */}
-                                <div className="absolute top-[40%] right-0 z-20 w-[65%] rounded-[30px] overflow-hidden shadow-[0_0_40px_rgba(0,0,0,0.2)] border-4 border-white">
+                                <div className="absolute top-[40%] right-0 z-20 w-[65%] rounded-[40px] overflow-hidden shadow-[0_0_40px_rgba(0,0,0,0.2)] border-4 border-white">
                                     <img
                                         src="/images/qa2.png"
                                         alt="Global Shipping Operations"

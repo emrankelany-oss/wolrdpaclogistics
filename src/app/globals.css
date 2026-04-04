@@ -12,17 +12,9 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 @keyframes slow-zoom {
@@ -41,4 +33,727 @@ body {
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
+}
+
+/* ============================================
+   Footer Styles
+   ============================================ */
+
+/* Top Section: CTA + Contact side by side */
+.site-footer .footer-top-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: start;
+  margin-bottom: 48px;
+}
+
+.site-footer .footer-cta-side h2 {
+  font-size: 1.875rem;
+  font-weight: 500;
+  line-height: 1.1;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #252728;
+  margin-bottom: 32px;
+}
+
+@media (min-width: 768px) {
+  .site-footer .footer-cta-side h2 {
+    font-size: 2.25rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .site-footer .footer-cta-side h2 {
+    font-size: 2.5rem;
+  }
+}
+
+.site-footer .email-form {
+  display: flex;
+  border: 1px solid #e5e7eb;
+  background-color: #f9fafb;
+  border-radius: 0.5rem;
+  width: 100%;
+  max-width: 420px;
+}
+
+.site-footer .email-form input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  padding: 16px;
+  color: #252728;
+  font-size: 1rem;
+  outline: none;
+  font-family: inherit;
+}
+
+.site-footer .email-form input::placeholder {
+  color: #6b7280;
+}
+
+.site-footer .email-form button {
+  background: transparent;
+  border: none;
+  color: #6b7280;
+  padding: 0 20px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: color 0.2s;
+  border-radius: 0 0.5rem 0.5rem 0;
+}
+
+.site-footer .email-form button:hover {
+  color: #252728;
+}
+
+/* Contact 2x2 Grid */
+.site-footer .footer-contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+}
+
+.site-footer .contact-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.site-footer .contact-icon {
+  width: 40px;
+  height: 40px;
+  background-color: #fef2f2;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: #b91c1c;
+}
+
+.site-footer .contact-item h4 {
+  color: #252728;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 8px;
+}
+
+.site-footer .contact-item p {
+  color: #6b7280;
+  font-size: 0.875rem;
+  line-height: 1.6;
+}
+
+/* Dividers */
+.site-footer .footer-divider {
+  border: none;
+  border-top: 1px solid #f3f4f6;
+  margin: 32px 0;
+}
+
+/* Middle Section */
+.site-footer .footer-middle {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+  margin-bottom: 40px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.site-footer .link-column h4,
+.site-footer .social-column h4 {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 20px;
+  color: #252728;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.site-footer .link-column h4::before,
+.site-footer .social-column h4::before {
+  content: '';
+  display: inline-block;
+  width: 20px;
+  height: 2px;
+  background-color: #b91c1c;
+  flex-shrink: 0;
+}
+
+.site-footer .link-column ul {
+  list-style: none;
+  padding: 0;
+  padding-left: 30px;
+  margin: 0;
+}
+
+.site-footer .link-column li {
+  margin-bottom: 12px;
+}
+
+.site-footer .link-column a {
+  color: #6b7280;
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.site-footer .link-column a:hover {
+  color: #252728;
+}
+
+/* Social Icons */
+.site-footer .social-icons {
+  display: flex;
+  gap: 12px;
+  padding-left: 30px;
+}
+
+.site-footer .social-icons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 50%;
+  color: #9ca3af;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.site-footer .social-icons a:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  color: #252728;
+}
+
+/* Bottom Section */
+.site-footer .footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.site-footer .brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.site-footer .copyright {
+  color: #6b7280;
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.site-footer .legal-links {
+  display: flex;
+  gap: 20px;
+}
+
+.site-footer .legal-links a {
+  color: #6b7280;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.site-footer .legal-links a:hover {
+  color: #252728;
+}
+
+/* ============================================
+   Why Choose Us Section Styles
+   ============================================ */
+
+/* Main Layout: Left text + Right cards */
+.why-choose-section .why-choose-layout {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 60px;
+  align-items: center;
+}
+
+/* Left Column */
+.why-choose-section .why-choose-left h2 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  line-height: 1.1;
+  color: #252728;
+  margin-bottom: 20px;
+  letter-spacing: 0.02em;
+}
+
+@media (min-width: 1024px) {
+  .why-choose-section .why-choose-left h2 {
+    font-size: 3rem;
+  }
+}
+
+.why-choose-section .why-choose-left p {
+  color: #6b7280;
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: 32px;
+  max-width: 400px;
+}
+
+/* Stats Row */
+.why-choose-section .why-stats {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.why-choose-section .why-stat {
+  display: flex;
+  flex-direction: column;
+}
+
+.why-choose-section .why-stat-number {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #252728;
+  line-height: 1;
+  margin-bottom: 4px;
+}
+
+.why-choose-section .why-stat-label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #6b7280;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.why-choose-section .why-stat-divider {
+  width: 1px;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Right Column */
+.why-choose-section .why-choose-right {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 520px;
+  overflow: hidden;
+}
+
+/* Concentric Circles */
+.why-choose-section .concentric-circles {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.why-choose-section .circle {
+  position: absolute;
+  border-radius: 50%;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.07);
+  background: transparent;
+}
+
+.why-choose-section .circle-1 {
+  width: 300px;
+  height: 300px;
+}
+
+.why-choose-section .circle-2 {
+  width: 440px;
+  height: 440px;
+}
+
+.why-choose-section .circle-3 {
+  width: 580px;
+  height: 580px;
+}
+
+/* Cards Grid */
+.why-choose-section .why-cards-grid {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px 60px;
+}
+
+/* Individual Card */
+.why-choose-section .why-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.why-choose-section .why-card-icon {
+  width: 48px;
+  height: 48px;
+  background: rgba(185, 28, 28, 0.08);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+  color: #b91c1c;
+}
+
+.why-choose-section .why-card-icon svg {
+  width: 22px;
+  height: 22px;
+}
+
+.why-choose-section .why-card h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #252728;
+  margin-bottom: 8px;
+  line-height: 1.3;
+}
+
+.why-choose-section .why-card p {
+  color: #6b7280;
+  font-size: 0.9rem;
+  line-height: 1.65;
+}
+
+/* Why Choose Us Responsive */
+@media (max-width: 1023px) {
+  .why-choose-section .why-choose-layout {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+  .why-choose-section .why-choose-right {
+    min-height: auto;
+  }
+  .why-choose-section .concentric-circles {
+    display: none;
+  }
+}
+
+@media (max-width: 639px) {
+  .why-choose-section .why-cards-grid {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  .why-choose-section .why-choose-left h2 {
+    font-size: 2rem;
+  }
+}
+
+/* ============================================
+   Testimonials Section Styles
+   ============================================ */
+
+.testimonials-section .section-header {
+  text-align: left;
+  margin-bottom: 48px;
+}
+
+.testimonials-section .section-header h2 {
+  font-size: 1.875rem;
+  font-weight: 500;
+  color: #252728;
+  margin-bottom: 16px;
+  letter-spacing: 0.05em;
+  line-height: 1.1;
+}
+
+@media (min-width: 768px) {
+  .testimonials-section .section-header h2 {
+    font-size: 2.25rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .testimonials-section .section-header h2 {
+    font-size: 3rem;
+  }
+}
+
+.testimonials-section .section-header p {
+  font-size: 1.125rem;
+  color: #6b7280;
+  max-width: 42rem;
+  line-height: 1.6;
+}
+
+/* Testimonial Fade Animation */
+@keyframes testimonialFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Cards Layout */
+.testimonials-section .cards-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  margin-bottom: 48px;
+}
+
+.testimonials-section .cards-container .card {
+  animation: testimonialFadeIn 0.4s ease-out;
+}
+
+/* Base Card */
+.testimonials-section .card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 40px 30px;
+  text-align: left;
+  width: 350px;
+  flex-shrink: 0;
+  transition: all 0.3s ease;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.02);
+}
+
+.testimonials-section .card.faded {
+  opacity: 0.5;
+  transform: scale(0.95);
+}
+
+.testimonials-section .card.active {
+  position: relative;
+  border: 2px solid #b91c1c;
+  transform: scale(1.05);
+  box-shadow: 0 20px 40px rgba(185, 28, 28, 0.1);
+  z-index: 2;
+}
+
+/* Quote Badge */
+.testimonials-section .quote-badge {
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  width: 48px;
+  height: 48px;
+  background-color: #b91c1c;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(185, 28, 28, 0.3);
+}
+
+.testimonials-section .quote-badge svg {
+  width: 20px;
+  height: 20px;
+  fill: #ffffff;
+}
+
+/* Stars */
+.testimonials-section .stars {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 20px;
+}
+
+.testimonials-section .stars svg {
+  width: 20px;
+  height: 20px;
+}
+
+.testimonials-section .card.faded .stars svg {
+  fill: #d1d5db;
+}
+
+.testimonials-section .card.active .stars svg {
+  fill: #b91c1c;
+}
+
+/* Quote Text */
+.testimonials-section .quote-text {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  min-height: 100px;
+}
+
+.testimonials-section .card.faded .quote-text {
+  color: #9ca3af;
+  font-style: italic;
+}
+
+.testimonials-section .card.active .quote-text {
+  color: #252728;
+  font-style: italic;
+  font-weight: 600;
+}
+
+/* Author */
+.testimonials-section .author {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.testimonials-section .author-avatar {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: #b91c1c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  font-size: 0.875rem;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.testimonials-section .card.faded .author-avatar {
+  background-color: #e5e7eb;
+  color: #6b7280;
+}
+
+.testimonials-section .author-details h4 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #252728;
+  margin-bottom: 4px;
+}
+
+.testimonials-section .card.faded .author-details h4 {
+  color: #6b7280;
+}
+
+.testimonials-section .author-details p {
+  font-size: 0.8rem;
+  color: #9ca3af;
+}
+
+/* Navigation Controls */
+.testimonials-section .controls {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.testimonials-section .btn {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: 1px solid #e5e7eb;
+  background: none;
+  padding: 0;
+}
+
+.testimonials-section .btn svg {
+  width: 20px;
+  height: 20px;
+}
+
+.testimonials-section .btn-prev {
+  background-color: #ffffff;
+}
+
+.testimonials-section .btn-prev svg {
+  fill: #252728;
+}
+
+.testimonials-section .btn-prev:hover {
+  background-color: #f3f4f6;
+}
+
+.testimonials-section .btn-next {
+  background-color: #b91c1c;
+  border-color: #b91c1c;
+  box-shadow: 0 4px 12px rgba(185, 28, 28, 0.3);
+}
+
+.testimonials-section .btn-next svg {
+  fill: #ffffff;
+}
+
+.testimonials-section .btn-next:hover {
+  background-color: #991b1b;
+}
+
+/* Testimonials Responsive */
+@media (max-width: 1023px) {
+  .testimonials-section .cards-container {
+    flex-wrap: wrap;
+  }
+  .testimonials-section .card.faded {
+    display: none;
+  }
+  .testimonials-section .card.active {
+    transform: scale(1);
+  }
+}
+
+/* Footer Responsive */
+@media (max-width: 1023px) {
+  .site-footer .footer-top-section {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .site-footer .footer-middle {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px 32px;
+  }
+}
+
+@media (max-width: 767px) {
+  .site-footer .email-form {
+    max-width: 100%;
+  }
+  .site-footer .footer-contact-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+  .site-footer .footer-middle {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px 20px;
+  }
+  .site-footer .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .site-footer .footer-contact-grid {
+    grid-template-columns: 1fr;
+  }
+  .site-footer .footer-middle {
+    grid-template-columns: 1fr;
+  }
 }

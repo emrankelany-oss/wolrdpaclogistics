@@ -3,33 +3,62 @@ import Link from 'next/link';
 
 export default function CTASection() {
     return (
-        <section className="py-24 px-6 md:px-12 lg:px-24 relative overflow-hidden">
-            {/* Background Image with Overlay */}
-            <div className="absolute inset-0 z-0">
-                <div className="absolute inset-0 bg-black/60 z-10"></div> {/* Dark Overlay for readability */}
-                <img
-                    src="/images/cta.png"
-                    alt="CTA Background"
-                    className="w-full h-full object-cover object-center"
-                />
-            </div>
+        <section className="py-16 px-4 md:px-6 lg:px-8 bg-white">
+            <div className="max-w-[1920px] mx-auto">
 
-            <div className="max-w-[1400px] mx-auto relative z-10 flex flex-col md:flex-row items-center justify-between gap-12 text-center md:text-left">
+                <div
+                    className="relative rounded-[40px] overflow-hidden px-4 md:px-6 lg:px-8 py-16 md:py-20 lg:py-24 min-h-[460px] md:min-h-[500px] lg:min-h-[540px] shadow-[0_8px_60px_rgba(0,0,0,0.25)]"
+                    style={{
+                        backgroundImage: `linear-gradient(to right, rgba(8,7,5,0.85) 0%, rgba(8,7,5,0.72) 40%, rgba(8,7,5,0.45) 100%), url('/images/cta3.png')`,
+                        backgroundSize: 'cover',
+                        backgroundPosition: 'center',
+                        backgroundRepeat: 'no-repeat',
+                    }}
+                >
 
-                <div className="max-w-2xl">
-                    <h2 className="text-3xl md:text-4xl lg:text-5xl font-medium uppercase tracking-wide drop-shadow-lg leading-[1.1] text-white mb-6">
-                        Ready to Streamline <br /> Your Logistics?
-                    </h2>
-                    <p className="text-gray-200 text-lg leading-relaxed">
-                        Join thousands of businesses that trust World Pac Logistics for their global shipping needs. efficient, reliable, and tailored to you.
-                    </p>
+                    {/* Content */}
+                    <div className="relative z-10 flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
+
+                        {/* Left - Text */}
+                        <div className="flex-1 text-center lg:text-left">
+                            <h2 className="text-3xl md:text-4xl lg:text-5xl font-medium tracking-wide drop-shadow-lg leading-[1.1] text-white mb-4">
+                                Ready to Move Your Cargo <br className="hidden md:block" /> With Confidence?
+                            </h2>
+                            <p className="text-gray-400 text-lg leading-relaxed max-w-xl mx-auto lg:mx-0">
+                                Partner with a logistics team that delivers on every promise. From port to door, we handle the complexity so you can focus on growth.
+                            </p>
+
+                            {/* Buttons */}
+                            <div className="mt-10 flex flex-col sm:flex-row items-center gap-4 justify-center lg:justify-start">
+                                <Link
+                                    href="/contact-us"
+                                    className="bg-red-700 hover:bg-white text-white hover:text-red-700 border-2 border-transparent hover:border-red-700 text-xs font-bold py-4 px-10 rounded-full hover:scale-105 transition-all duration-300 uppercase tracking-wider cursor-pointer"
+                                >
+                                    Request a Quote
+                                </Link>
+                            </div>
+
+                            {/* Micro-proof points */}
+                            <div className="mt-10 flex flex-wrap items-center gap-x-8 gap-y-3 justify-center lg:justify-start">
+                                <div className="flex items-center gap-2">
+                                    <div className="w-1.5 h-1.5 rounded-full bg-red-700"></div>
+                                    <span className="text-gray-500 text-xs font-bold uppercase tracking-wider">Response within 24 hours</span>
+                                </div>
+                                <div className="flex items-center gap-2">
+                                    <div className="w-1.5 h-1.5 rounded-full bg-red-700"></div>
+                                    <span className="text-gray-500 text-xs font-bold uppercase tracking-wider">Dedicated account support</span>
+                                </div>
+                                <div className="flex items-center gap-2">
+                                    <div className="w-1.5 h-1.5 rounded-full bg-red-700"></div>
+                                    <span className="text-gray-500 text-xs font-bold uppercase tracking-wider">End-to-end logistics</span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
                 </div>
 
-                <div>
-                    <Link href="#" className="inline-block bg-red-700 hover:bg-red-800 text-white text-sm font-bold py-4 px-10 rounded-full shadow-[0_0_20px_rgba(185,28,28,0.5)] hover:scale-105 transition-all uppercase tracking-wider">
-                        Get a Quote
-                    </Link>
-                </div>
             </div>
         </section>
     );

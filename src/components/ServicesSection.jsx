@@ -37,13 +37,13 @@ const services = [
 
 export default function ServicesSection() {
     return (
-        <section className="py-24 px-6 md:px-12 lg:px-24 bg-white text-[#252728] relative z-10 -mt-10">
-            <div className="max-w-[1400px] mx-auto">
+        <section className="py-16 px-4 md:px-6 lg:px-8 bg-white text-[#252728] relative z-10 -mt-10">
+            <div className="max-w-[1920px] mx-auto">
 
                 {/* Section Title */}
                 {/* Section Title */}
                 <div className="mb-12 text-left">
-                    <h2 className="text-3xl md:text-4xl lg:text-5xl font-medium uppercase tracking-wide drop-shadow-lg leading-[1.1] text-[#252728] mb-4">Our Services</h2>
+                    <h2 className="text-3xl md:text-4xl lg:text-5xl font-medium tracking-wide drop-shadow-lg leading-[1.1] text-[#252728] mb-4">Solutions We Provide</h2>
                     <p className="text-gray-600 text-lg max-w-2xl">
                         Tailored logistics solutions designed to streamline your operations and accelerate growth.
                     </p>
@@ -54,37 +54,31 @@ export default function ServicesSection() {
                     {services.map((service, index) => (
                         <div
                             key={index}
-                            className="group relative h-[340px] w-full overflow-hidden rounded-[40px] shadow-lg cursor-pointer"
+                            className="group relative h-[440px] w-full overflow-hidden rounded-[40px] shadow-lg hover:shadow-2xl cursor-pointer transition-shadow duration-500"
                         >
                             {/* Background Image */}
                             <div className="absolute inset-0 h-full w-full">
                                 <img
                                     src={service.image}
                                     alt={service.title}
-                                    className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
+                                    className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-105"
                                 />
-                                {/* Overlay - Always present but gets darker/gradient shifts on hover */}
-                                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent opacity-80 transition-opacity duration-300 group-hover:opacity-90"></div>
+                                {/* Bottom gradient only - keeps image clear */}
+                                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
                             </div>
 
-                            {/* Content */}
-                            <div className="absolute bottom-0 left-0 w-full p-8 flex flex-col justify-end h-full transition-all duration-500">
-
-                                {/* Title and initial view */}
-                                <div className="transform transition-transform duration-500 ease-out translate-y-[140px] group-hover:translate-y-0">
-                                    <h3 className="text-3xl font-bold text-white mb-4 leading-tight">{service.title}</h3>
-
-                                    {/* Description and Button (Revealed on hover) */}
-                                    <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">
-                                        <p className="text-gray-200 text-sm leading-relaxed mb-6 line-clamp-3">
-                                            {service.description}
-                                        </p>
-
-                                        <Link href="#" className="inline-block bg-red-700 text-white text-xs font-bold py-3.5 px-8 rounded-full shadow-[0_0_20px_rgba(185,28,28,0.5)] hover:bg-red-800 hover:scale-105 transition-all uppercase tracking-wider">
-                                            Learn More
-                                        </Link>
-                                    </div>
-                                </div>
+                            {/* Content - anchored at bottom */}
+                            <div className="absolute bottom-0 left-0 w-full p-8">
+                                <h3 className="text-2xl font-bold text-white mb-2 leading-tight">{service.title}</h3>
+                                <p className="text-gray-200/90 text-sm leading-relaxed mb-4 line-clamp-2">
+                                    {service.description}
+                                </p>
+                                <Link href="#" className="inline-flex items-center gap-2 text-white text-xs font-bold uppercase tracking-wider hover:text-red-400 transition-colors duration-300">
+                                    Learn more
+                                    <svg className="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                                    </svg>
+                                </Link>
                             </div>
                         </div>
                     ))}
