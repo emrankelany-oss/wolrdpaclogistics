@@ -10,12 +10,15 @@
   },
   "dependencies": {
     "next": "16.1.6",
+    "next-intl": "^4.9.0",
     "react": "19.2.3",
     "react-dom": "19.2.3"
   },
   "devDependencies": {
     "@superdesign/cli": "^0.2.1",
     "@tailwindcss/postcss": "^4",
+    "@types/node": "25.5.2",
+    "@types/react": "19.2.14",
     "babel-plugin-react-compiler": "1.0.0",
     "eslint": "^9",
     "eslint-config-next": "16.1.6",

@@ -1,19 +1,21 @@
 import HeroSection from '@/components/HeroSection';
 import ServicesSection from '@/components/ServicesSection';
-import WhyChooseUsSection from '@/components/WhyChooseUsSection';
+import WhyChooseUs from '@/components/WhyChooseUs';
 import FAQSection from '@/components/FAQSection';
+import Testimonials from '@/components/Testimonials';
+import ArticlesSection from '@/components/ArticlesSection';
 import CTASection from '@/components/CTASection';
-import Footer from '@/components/Footer';
 
 export default function Home() {
   return (
     <main>
       <HeroSection />
       <ServicesSection />
-      <WhyChooseUsSection />
+      <WhyChooseUs />
       <FAQSection />
+      <Testimonials />
+      <ArticlesSection />
       <CTASection />
-      <Footer />
     </main>
   );
 }
