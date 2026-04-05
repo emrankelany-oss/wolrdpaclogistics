@@ -1,3 +1,5 @@
+import { notFound } from 'next/navigation';
+import { isPublished } from '@/schedule-engine/access-control';
 import ArticleClient from './ArticleClient';
 
 export const metadata = {
@@ -17,5 +19,6 @@ export const metadata = {
 };
 
 export default function FreightForwardingExplainedPage() {
+  if (!isPublished('/articles/freight-forwarding-explained')) notFound();
   return <ArticleClient />;
 }
