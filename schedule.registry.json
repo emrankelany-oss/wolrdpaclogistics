@@ -1,20 +1,20 @@
 {
-  "lastUpdated": "2026-04-04T23:08:43.268Z",
+  "lastUpdated": "2026-04-05T00:05:12.580Z",
   "articles": [
     {
       "slug": "about-us",
       "route": "/about-us",
-      "filePath": "c:/Users/Pc/Desktop/projects/worldpaclogistics/src/app/about-us/page.js",
-      "status": "scheduled",
+      "filePath": "/home/runner/work/wolrdpaclogistics/wolrdpaclogistics/src/app/about-us/page.js",
+      "status": "published",
       "publishAt": "2026-04-05T00:00:00.000Z",
       "detectedAt": "2026-04-04T23:03:40.469Z",
-      "publishedAt": null,
+      "publishedAt": "2026-04-05T00:05:12.579Z",
       "title": "About Us"
     },
     {
       "slug": "contact-us",
       "route": "/contact-us",
-      "filePath": "c:/Users/Pc/Desktop/projects/worldpaclogistics/src/app/contact-us/page.js",
+      "filePath": "/home/runner/work/wolrdpaclogistics/wolrdpaclogistics/src/app/contact-us/page.js",
       "status": "scheduled",
       "publishAt": "2026-04-06T00:00:00.000Z",
       "detectedAt": "2026-04-04T23:03:40.470Z",
@@ -24,7 +24,7 @@
     {
       "slug": "services",
       "route": "/services",
-      "filePath": "c:/Users/Pc/Desktop/projects/worldpaclogistics/src/app/services/page.js",
+      "filePath": "/home/runner/work/wolrdpaclogistics/wolrdpaclogistics/src/app/services/page.js",
       "status": "scheduled",
       "publishAt": "2026-04-07T00:00:00.000Z",
       "detectedAt": "2026-04-04T23:03:40.470Z",
@@ -34,17 +34,17 @@
     {
       "slug": "article-ecommerce-tco",
       "route": "/articles/article-ecommerce-tco",
-      "filePath": "c:/Users/Pc/Desktop/projects/worldpaclogistics/src/app/articles/article-ecommerce-tco/page.tsx",
-      "status": "scheduled",
+      "filePath": "/home/runner/work/wolrdpaclogistics/wolrdpaclogistics/src/app/articles/article-ecommerce-tco/page.tsx",
+      "status": "published",
       "publishAt": "2026-04-05T00:00:00.000Z",
       "detectedAt": "2026-04-04T23:08:43.255Z",
-      "publishedAt": null,
+      "publishedAt": "2026-04-05T00:05:12.579Z",
       "title": "{t('heroTitle')}"
     },
     {
       "slug": "article-inventory-framework",
       "route": "/articles/article-inventory-framework",
-      "filePath": "c:/Users/Pc/Desktop/projects/worldpaclogistics/src/app/articles/article-inventory-framework/page.tsx",
+      "filePath": "/home/runner/work/wolrdpaclogistics/wolrdpaclogistics/src/app/articles/article-inventory-framework/page.tsx",
       "status": "scheduled",
       "publishAt": "2026-04-06T00:00:00.000Z",
       "detectedAt": "2026-04-04T23:08:43.255Z",
@@ -54,7 +54,7 @@
     {
       "slug": "article-mpos-hidden-math",
       "route": "/articles/article-mpos-hidden-math",
-      "filePath": "c:/Users/Pc/Desktop/projects/worldpaclogistics/src/app/articles/article-mpos-hidden-math/page.tsx",
+      "filePath": "/home/runner/work/wolrdpaclogistics/wolrdpaclogistics/src/app/articles/article-mpos-hidden-math/page.tsx",
       "status": "scheduled",
       "publishAt": "2026-04-07T00:00:00.000Z",
       "detectedAt": "2026-04-04T23:08:43.255Z",
