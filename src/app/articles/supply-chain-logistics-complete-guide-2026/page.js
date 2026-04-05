@@ -1,5 +1,5 @@
 import { notFound } from 'next/navigation';
-import { isPublished } from '@/schedule-engine/access-control';
+import { isPublished } from '../../../../schedule-engine/access-control';
 import ArticleClient from './ArticleClient';
 
 export const metadata = {
