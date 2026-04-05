@@ -40,3 +40,10 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 .superdesign
+
+# local-only (kept off repo)
+/src/app/articles/
+/schedule-engine/
+/schedule.config.json
+/schedule.registry.json
+/.github/workflows/schedule-publish.yml
