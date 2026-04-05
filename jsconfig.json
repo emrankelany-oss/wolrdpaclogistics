@@ -1,7 +1,6 @@
 {
   "compilerOptions": {
     "paths": {
-      "@/schedule-engine/*": ["./schedule-engine/*"],
       "@/*": ["./src/*"]
     }
   }

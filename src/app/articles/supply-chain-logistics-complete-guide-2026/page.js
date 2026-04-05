@@ -1,5 +1,3 @@
-import { notFound } from 'next/navigation';
-import { isPublished } from '@/schedule-engine/access-control';
 import ArticleClient from './ArticleClient';
 
 export const metadata = {
@@ -19,6 +17,5 @@ export const metadata = {
 };
 
 export default function SupplyChainLogisticsPage() {
-  if (!isPublished('/articles/supply-chain-logistics-complete-guide-2026')) notFound();
   return <ArticleClient />;
 }
