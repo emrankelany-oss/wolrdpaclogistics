@@ -23,6 +23,7 @@ export default function Header() {
         { name: 'Home', path: '/' },
         { name: 'Services', path: '/services' },
         { name: 'About Us', path: '/about-us' },
+        { name: 'Articles', path: '/articles' },
         { name: 'Contact Us', path: '/contact-us' },
     ];
 
